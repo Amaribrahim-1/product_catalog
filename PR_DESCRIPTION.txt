@@ -1,0 +1,14 @@
+Title: Initial commit — Product Catalog React training project
+
+Description:
+
+This PR adds the initial project files for a small React training project. The app demonstrates key React fundamentals:
+
+- Components, props, and JSX
+- `useState` for local state management
+- `useEffect` for data fetching and handling side effects
+- Suggestion to refactor the data fetching logic into a custom hook (e.g., `useFetch`)
+
+Notes:
+- Data is loaded from the Fake Store API for demo purposes.
+- This project is intended for learning and experimentation, not production use.

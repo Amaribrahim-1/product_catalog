@@ -1,0 +1,7 @@
+Short commit message (summary):
+
+chore: initial commit — add product_catalog React training project
+
+Longer description:
+
+Add initial React project files for a simple product catalog used for training React basics: components, props, JSX, useState, useEffect, and suggested custom hooks.
