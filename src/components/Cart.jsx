@@ -3,7 +3,7 @@ import CartItem from "./CartItem";
 
 export default function Cart({
   cartProducts,
-  setIsOpen,
+  setIsCartOpen,
   onRemoveItem,
   onIncrease,
   onDecrease,
@@ -15,13 +15,13 @@ export default function Cart({
 
   return (
     <>
-      <div className="cart-overlay"></div>
+      <div className="cart-overlay" onClick={() => setIsCartOpen(false)}></div>
       <div className="cart-sidebar">
         <div className="cart-header">
           <h2 className="cart-title">Shopping Cart</h2>
           <Button
             className="cart-close-button"
-            onClick={() => setIsOpen((isOpen) => !isOpen)}
+            onClick={() => setIsCartOpen(false)}
           >
             ×
           </Button>

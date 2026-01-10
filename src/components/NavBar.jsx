@@ -1,7 +1,7 @@
 import Logo from "./Logo";
 import Button from "./Button";
 
-export default function NavBar({ children, setIsOpen, cartProducts }) {
+export default function NavBar({ children, setIsCartOpen, cartProducts }) {
   const cartCount = cartProducts.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
@@ -11,7 +11,7 @@ export default function NavBar({ children, setIsOpen, cartProducts }) {
           <Logo />
           <Button
             className="cart-button"
-            onClick={() => setIsOpen((isOpen) => !isOpen)}
+            onClick={() => setIsCartOpen((isOpen) => !isOpen)}
           >
             🛒 Cart
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
